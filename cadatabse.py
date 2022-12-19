@@ -6,7 +6,7 @@ con = mysql.connector.connect(
 def checkin():
     d = input("Days:")
     g = input("Names:")
-    a = input("Adhar:")
+    a = input("Age:")
     dt = input("Date:")
     b = input("Type and number:")
     data = (d, g, a, dt, b)

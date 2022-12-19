@@ -23,9 +23,9 @@ def checkout():
     tg = int(input("Guests:"))
     f = int(input("fare:"))
     d = int(input("days:"))
-    bl = f*d*tg
     cod = input("date:")
-    data = (b, tg, f, d, bl, cod)
+
+    data = (b, tg, f, d, cod)
     sql = 'insert into checkout values(%s,%s,%s,%s,%s)'
     c = con.cursor()
     c.execute(sql, data)
